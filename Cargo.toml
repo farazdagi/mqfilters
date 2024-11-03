@@ -1,0 +1,15 @@
+[package]
+name = "mqfilters"
+version = "0.1.0"
+authors = ["Victor Farazdagi <farazdagi@gmail.com>"]
+edition = "2021"
+license = "MIT"
+description = "Highly optimized approximate membership query filters (bloom, cuckoo, xor, quotient) with SIMD support"
+homepage = "https://github.com/farazdagi/mqfilters"
+repository = "https://github.com/farazdagi/mqfilters"
+documentation = "https://docs.rs/mqfilters"
+readme = "README.md"
+keywords = ["bloom", "membership-query", "amq", "filter"]
+categories = ["algorithms", "data-structures"]
+
+[dependencies]
