@@ -1,6 +1,6 @@
 [package]
 name = "mqfilters"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Victor Farazdagi <farazdagi@gmail.com>"]
 edition = "2021"
 license = "MIT"
@@ -12,4 +12,14 @@ readme = "README.md"
 keywords = ["bloom", "membership-query", "amq", "filter"]
 categories = ["algorithms", "data-structures"]
 
+[features]
+default = ["simd", "bf"]
+simd = []
+bf = []
+
+
 [dependencies]
+xxhash-rust = { version = "0.8", features = ["xxh3", "const_xxh3"] }
+hash-iter = "1"
+fixedbitset = "0.5"
+thiserror = "2"
